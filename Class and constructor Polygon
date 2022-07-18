@@ -1,0 +1,18 @@
+class Polygon {
+    constructor(sides) 
+    {
+        var polygon_perimeter = 0;
+        for (var index in sides)
+            {
+                polygon_perimeter += sides[index];
+            }
+        
+        this.my_perimeter = polygon_perimeter;
+    }
+    
+     perimeter() 
+    {
+        return this.my_perimeter;
+    }
+    
+}
