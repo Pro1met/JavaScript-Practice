@@ -1,0 +1,26 @@
+function isPrime(num) {
+
+    if (num === 2 || num === 3) {
+      return true;
+      
+    } else if (num > 1) {
+      for (var i = 2; i < (num/2); i++) {
+  
+        if (num % i !== 0) {
+          return true;
+        } 
+        else if (num === i * i) {
+          return false
+        } 
+
+        else {
+          return false;
+        }
+      }
+    } 
+    // To check if number is negative
+    else {
+      return 'Is Negative';
+    }
+  
+  }
