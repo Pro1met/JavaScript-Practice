@@ -1,5 +1,7 @@
 function checkPalindrome(string) {
 
+    // To Avoid error if the 1st character is capitalized
+    string = string.toLowerCase();
     // find the length of a string
     const len = string.length;
 
