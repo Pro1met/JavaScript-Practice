@@ -1,0 +1,18 @@
+// Find the most repeated character in a string
+
+const str = 'Shahzaib is learning javasctipt, Shahzaib is also learning node, Shahzaib making good progress.';
+
+function isRepeated(str){
+    var max = 0;
+    var repStr = '';
+    str.split('').forEach(char => {
+        if(str.split(char).length > max){
+            max = str.split(char).length;
+            repStr = char;
+        }
+        
+    });
+    return repStr;
+}
+
+console.log(isRepeated(str));
