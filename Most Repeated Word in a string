@@ -5,6 +5,7 @@ const str = 'Shahzaib is learning javasctipt, Shahzaib is also learning node, Sh
 function isRepeated(str){
     var max = 0;
     var repStr = '';
+    //split each word e.g 'shahzaib', 'is'.
     str.split(" ").forEach(char => {
         if(str.split(char).length > max){
             max = str.split(char).length;
